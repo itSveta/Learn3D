@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700.." rel="stylesheet">
+     <link rel="stylesheet" href="Loading.css">
+</head> 
+	
+        <header class="header">
+          <div class="container">
+              <div class="header__inner">
+                  <div class="header__logo">Учи 3Д</div>
+                  <nav class="nav">
+                      <a class="nav__link" href="#">Войти в 3D-мир</a>
+                      <div class="nav___link" >Мякотных Д.М</div> 
+                  </nav>
+              </div>
+            </div>
+        </header>
+	
+ <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+				<div class="panel5">
+					<div class="ima"><a href="welcom.html"><img src="Images/%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0.jpg" class="ima"></a></div>
+					
+				<header>
+				<h2 class="intro__suptitle"> Загрузка модели </h2>
+					<h1 class="intro__title">Всё просто - выбери тему, загрузи модель - готово!</h1>	
+				</header> 
+			    </div>
+				
+				<div class="panel4">
+				<h2 class="intro__Tem">Название</h2>  
+               </div>
+				
+				<div class="flex-row">
+                  <input id="username" class='lf--input' placeholder='Введите название' type='text'>
+                </div>
+				
+				<div class="panel4">
+				<h2 class="intro__Tem">Выберите тему</h2>  
+                </div>
+		
+				<div class="flex-row">
+					<select id="username" class='lf--input2' placeholder='Введите название' type='text'>
+					<option>Моделирование</option>
+                    <option>Анимация</option>
+					<option>Риггинг</option>
+					<option>Текстуринг</option>	
+					<option>Скульптинг</option>	
+					</select>	        
+				</div>
+				
+					<div class="panel4">
+				<h2 class="intro__Tem">Загрузи модель</h2>  
+                </div>
+	
+
+  <div class="dropzone" id="dropzone">Загрузить модель<p>Принимаются файлы в формате OBJ</p></div>
+				
+				<script>
+   (function() {
+    var dropzone = document.getElementById("dropzone");
+
+    dropzone.ondrop = function(e) {
+     this.className = 'dropzone';
+     this.innerHTML = 'Загрузить модель';
+     e.preventDefault();
+     upload(e.dataTransfer.files);
+    };
+
+    var displayUploads = function(data) {
+     var uploads = document.getElementById("uploads"),
+         anchor,
+         x;
+
+     for(x = 0; x < data.length; x++) {
+      anchor = document.createElement('li');
+      anchor.innerHTML = data[x].name;
+      uploads.appendChild(anchor);
+     }
+    };
+
+    var upload = function(files) {
+     var formData = new FormData(),
+      xhr = new XMLHttpRequest(),
+      x;
+
+     for(x = 0; x < files.length; x++) {
+      formData.append('file[]', files[x]);
+     }
+
+     xhr.onload = function() {
+      var data = JSON.parse(this.responseText);
+      displayUploads(data);
+     };
+
+     xhr.open('post', 'upload.php');
+     xhr.send(formData);
+    };
+
+    dropzone.ondragover = function() {
+     this.className = 'dropzone dragover';
+     this.innerHTML = 'Отпустите мышку';
+     return false;
+    };
+
+    dropzone.ondragleave = function() {
+     this.className = 'dropzone';
+     this.innerHTML = 'Вау!Крутая моделька!';
+     return false;
+    };
+
+   }());
+  </script>
+				
+		       <div class="panel2">
+				<a href="#" class="butom">Загрузить</a>
+				</div>
+				
