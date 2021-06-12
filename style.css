@@ -18,7 +18,10 @@ body {
   justify-content: center;
   -ms-flex-direction: column;
   flex-direction: column;
-  position: relative
+  position: relative;
+   
+
+  font-family: Open Sans, Arial, sans-serif;
   font-size: 1.3em;
 }
 
@@ -35,12 +38,13 @@ body:before {
 /*Форма авторизации*/
 .login-form {
   font-family: 'Inter';
-  width: 80%;
-  padding: 1.5em;
+  width: 100%;
+  
   position: relative;
   border-radius: 12px;
   border: 2px solid #fff;
   background: #fff;
+	 
   
 }
 .login-form:before {
@@ -87,10 +91,14 @@ body:before {
   background: #DCDCDC;
   padding: 1em 2em;
   border: 0;
-  width: 100%;
+  width: 80%;
   box-sizing: border-box;
   font-size: 1rem;
-  border-radius: 3px; 
+  border-radius: 8px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto; 
+	
 }
 
 .
@@ -114,21 +122,24 @@ color:white;
 font-family: 'Inter';
   display: block;
   padding: 1em;
-  width: 89%;
+  width: 68%;
   text-align: center;
   background:#DCDCDC;
   border: 0;
-  border-radius: 3px;
+  border-radius: 8px;
   color: #fff;
   margin-top: 20px;
   cursor: pointer;
   font-size: 0.85em;
   font-weight: 500;
+	display: block;
+    margin-left: auto;
+    margin-right: auto ;
  
 }
 .panel:hover {
     	color: #fff;
-    	background: #9370DB;
+    	background: #7879F1;
     	tansition: all .3s linear;
     	-webkit-transition: all .3s linear;
     	-moz-transition: all .3s linear; 

@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    
     background-color: black;
     font-size: 15px;
     line-height: 1.6;
@@ -15,6 +15,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+	
+	
 }
 
 hr {
@@ -59,7 +61,7 @@ hr {
   background-size:cover;
   width: 100%;
   height: 70px;
-  background-color: #9370DB;
+  background-color: #7879F1;
   margin-bottom: 10px;
   position: absolute;
   top: 0;
@@ -168,7 +170,7 @@ hr {
 	font-weight: bolder;
 	height: 550px;
 	margin-left: 0px;
-	font-size: 30px; 
+	font-size: 25px; 
     width: 100%;
     margin: 10 auto;
 	font-family: 'Inter';
@@ -177,7 +179,7 @@ hr {
 /*Надпись2*/
 .intro__title {
     color: #000;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 500;
     line-height: 1;
 	font-family: 'Inter';
@@ -202,25 +204,28 @@ color:white;
 /*Темы*/
 .intro__Tem{
     margin-top:;
-	font-size: 30px; 
+	font-size: 25px; 
     width: 100%;
     margin: 10 auto;
 	margin-left: 70px;
-	margin-top: 50px;
+	margin-top: 30px;
 	font-weight: bolder;
 }
 /*Блок для названия темы*/
 .lf--input {
-  background: #DCDCDC;
+	
+  border:2px solid #7879F1;
+ background-color: rgba(165, 166, 246,0.3);
+  color:#5D5FEF;
   padding: 1em 2em;
-  border: 0;
   width: 100%;
   box-sizing: border-box;
-  font-size: 1rem;0
-  font-family: Open Sans, Arial, sans-serif;
+  font-size: 15px;;
   border-radius: 10px; 
   width: 210px;
-  margin-left: 68px;	
+  margin-left: 68px;
+  font-family: 'Inter';
+	margin-top: 16px;
 }
 
 
@@ -234,39 +239,14 @@ color:white;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
-/*Блок выбора темы*/
-.lf--input2 {
-  background: #DCDCDC;
-  padding: 1em 2em;
-  border: 0;
-  width: 100%;
-  box-sizing: border-box;
-  font-size: 1rem;0
-  font-family: Open Sans, Arial, sans-serif;
-  border-radius: 10px; 
-  width: 210px;
-  margin-left: 68px;
-	font-family: 'Inter';
-	
-}
 
-
-
-.lf--input2:focus {
-  outline: none;
-  -webkit-transition: -webkit-transform .15s ease;
-  transition: -webkit-transform .15s ease;
-  transition: transform .15s ease;
-  transition: transform .15s ease, -webkit-transform .15s ease;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-}
 
 /*загрузка модели*/
 .dropzone {
+	border-radius: 12px;
   width: 500px;
   height: 200px;
-  border: 4px dashed #e988f7;
+  border: 4px dashed #7879F1;
   color: #aaa;
   line-height: 150px;
   text-align: center;
@@ -274,7 +254,7 @@ color:white;
   left: 50%;
   margin-left: -532px;
   top: 100%;
-  margin-top: -170px;
+  margin-top: -240px;
 	font-size:30px;
 	font-family: 'Inter';
 }
@@ -293,15 +273,15 @@ p{
 .panel2 {
   font-family: 'Inter';
   display: block;
-  padding: 0.2em;
+  padding: 0.6em;
   width: 15%;
   text-align: center;
   background:#9370DB;
   border: 0;
   border-radius: 10px;
   color: #fff;
-  margin-top: 260px;
-	margin-left: 70px;
+  margin-top: 245px;
+  margin-left: 70px;
   cursor: pointer;
   font-size: 0.6em;
   font-weight: 0;
@@ -324,3 +304,4 @@ p{
           transform: scale(1.02);
 	
 }
+
