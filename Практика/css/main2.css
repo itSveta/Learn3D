@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background: #7879F1;
+    
+}
+.logo{
+    font-family: 'GolosTextWebBlack';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+   
+}
+.nav {
+     position: relative;
+}
+
+.link3D {
+    font-family: Inter;
+    display: flex;
+    color: white;
+    
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    font-size: 14px;
+
+    position: absolute;
+    left: 46.46%;
+    right: 44.06%;
+    top: 35%;
+    bottom: 35%;
+    text-decoration: underline #fff dashed;
+    display: flex;
+}
+.linkacc {
+    font-family: Inter;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    font-size: 14px;
+    position: absolute;
+    left: 76.33%;
+    right: 14.66%;
+    top: 35%;
+    bottom: 36%;
+}
+
+
+.intro__inner{
+    font-family: Inter;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 680px;
+    height: 187px;
+    left: 240px;
+    top: 160px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+.intro__suptitle{
+    font-family: Inter;
+    position: static;
+    width: 600px;
+    height: 77px;
+    left: 0px;
+    top: 0px;
+
+   
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
+
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.intro__title{
+    font-family: Inter;
+    position: absolute;
+    width: 680px;
+    height: 100px;
+    left: 0px;
+    top: 87px;
+
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 140%;
+    
+    flex: none;
+    margin: 10px 0px;
+}
+.introlink{
+    color: black;
+    font-family: Inter;
+    text-decoration: none;
+    border-bottom: 2px dashed black;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 317px;
+    height: 372px;
+    left: 240px;
+    top: 443px;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 317px;
+    height: 372px;
+    left: 607px;
+    top: 443px
+}
+.linkfrommodel{
+    text-decoration: none;
+}
+.namestudent{
+    position: static;
+    width: 186px;
+    height: 34px;
+    left: 0px;
+    top: 0px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    color: #000000;
+    flex: none;
+    order: 0;
+    margin: 10px 0px;
+    
+}
+.namemodel{
+    position: static;
+    width: 317px;
+    height: 34px;
+    left: 0px;
+    top: 44px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    color: #000000;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 14px 18px 14px 10px;
+
+    position: static;
+    width: 262px;
+    height: 48px;
+    left: 0px;
+    top: 88px;
+
+    background: rgba(165, 166, 246, 0.2);
+
+    border: 1px solid #5D5FEF;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+.comment{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5D5FEF;
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 14px 18px 14px 10px;
+
+    position: static;
+    width: 262px;
+    height: 48px;
+    left: 0px;
+    top: 88px;
+
+    background: rgba(165, 166, 246, 0.2);
+
+    border: 1px solid #5D5FEF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+.comment2{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5D5FEF;
+}

@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background: #7879F1;
+    
+}
+.logo{
+    font-family: 'GolosTextWebBlack';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+   
+}
+.nav {
+     position: relative;
+}
+
+.link3D {
+    font-family: Inter;
+    display: flex;
+    color: white;
+    
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    font-size: 14px;
+
+    position: absolute;
+    left: 46.46%;
+    right: 44.06%;
+    top: 35%;
+    bottom: 35%;
+    text-decoration: underline #fff dashed;
+    display: flex;
+}
+.linkacc {
+    font-family: Inter;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    font-size: 14px;
+    position: absolute;
+    left: 76.33%;
+    right: 14.66%;
+    top: 35%;
+    bottom: 36%;
+}
+
+
+.intro__inner{
+    font-family: Inter;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 680px;
+    height: 187px;
+    left: 240px;
+    top: 160px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.topic{
+    font-family: Inter;
+    position: static;
+    width: 600px;
+    height: 77px;
+    left: 0px;
+    top: 0px;
+
+   
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
+
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.about{
+    font-family: Inter;
+    position: absolute;
+    width: 1000px;
+    height: 100px;
+    left: 0px;
+    top: 87px;
+
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 140%;
+    
+    flex: none;
+    margin: 10px 0px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 1440px;
+    height: 561px;
+    left: 240px;
+    top: 459px;
+}
+.lastmodels{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    color: #000000;
+}
+.models{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 1440px;
+    height: 473px;
+    left: 0px;
+    top: 88px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 30px 0px;
+}
+.container img{
+    position: static;
+    width: 706px;
+    height: 473px;
+    left: 0px;
+    top: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 28px 0px 0px;
+}
