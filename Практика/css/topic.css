@@ -213,3 +213,27 @@
     left: 240px;
     top: 459px;
 }
+#circlelast {
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: -50px;
+        top: 300px;
+        background: #CDCEF9;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+#circlenext {
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 1390px;
+        top: 300px;
+        background: #7879F1;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+}
