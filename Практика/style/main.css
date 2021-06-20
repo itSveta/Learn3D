@@ -1,0 +1,312 @@
+html{
+    font-family: 'Inter', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+object{
+    pointer-events: none;
+}
+h1{
+    margin:0;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000000;
+    padding-bottom: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+h2{
+    margin: 0;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 30px;
+
+}
+h3{
+    margin: 0;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(196, 196, 196, 1);
+    padding-bottom: 16px;
+}
+h4{
+    margin:0;
+    padding-bottom: 16px;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 400px;
+    max-height: 50px;
+
+}
+h4>*:hover {
+    background: rgba(120, 121, 241, 1);
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #FFFFFF;
+    transform: translate(-12px);
+}
+header{
+    padding-top: 30px;
+    background: rgba(120, 121, 241, 1);
+    background-size:cover;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 60px;
+
+}
+.header__container{
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_wrapper{
+    margin: auto;
+    max-width: 1440px;
+}
+.text{
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}
+button{
+    margin-top: 20px;
+    height: 48px;
+    width: 262px;
+    left: 0px;
+    top: 207px;
+    border-radius: 8px;
+    padding: 14px 10px 14px 10px;
+    background: rgba(120, 121, 241, 1);
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+a{
+    display: inline;
+    color: #000;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+.link > * {
+    color: white;
+    font-size: 24px;
+    line-height: 100%;
+    border-bottom: 2px dashed #FFFFFF;
+}
+.text_link {
+    color: #000;
+    border-bottom: 2px dashed #000000;
+
+}
+.profile > * {
+    color: white;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.main_info{
+    margin-bottom: 120px;
+}
+.main_info_arrow:before {
+    content: "";
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+main_info_arrow{
+    margin-bottom: 120px;
+}
+.themes{
+    margin-bottom: 60px;
+}
+.themes__row{
+    padding-bottom: 40px;
+    width: 100%;
+    display: flex;
+}
+.themes__column{
+    width:100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.img{
+    position: absolute;
+    width: 538px;
+    height: 538px;
+    left: 1219px;
+    top: 30px;
+    background: url("/img/figure.png");
+}
+.arrow_back{
+    display: inline-block;
+    vertical-align: middle;
+}
+.text_arrow{
+    transform: translate(74px);
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}
+.inputs{
+    transform: translate(74px);
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.input_text{
+    height: 18px;
+    width: 260px;
+    border-radius: 4px;
+    padding: 10px 16px 16px 10px;
+    border: 1px solid rgba(93, 95, 239, 1);
+    background: rgba(165, 166, 246, 0.2);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(93, 95, 239, 1);
+    margin-bottom: 30px;
+}
+.input_select{
+    height: 48px;
+    width: 290px;
+    border-radius: 4px;
+    padding: 10px 16px 16px 10px;
+    border: 1px solid rgba(93, 95, 239, 1);
+    background: rgba(165, 166, 246, 0.2);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(93, 95, 239, 1);
+    appearance: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.h2_arrow{
+    margin: 0;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.input_file{
+    height: 160px;
+    width: 600px;
+    left: 0px;
+    top: 78px;
+    border-radius: 12px;
+    border: 2px dashed rgba(120, 121, 241, 1);
+    background: rgba(165, 166, 246, 0.2);
+    cursor: pointer;
+}
+.input_file_text_main{
+    margin: 0;
+    padding: 40px 80px 0px 80px;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(93, 95, 239, 1);
+}
+.input_file_text{
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+   color: rgba(165, 166, 246, 1);
+}
+.input_file_error{
+    height: 160px;
+    width: 600px;
+    left: 0px;
+    top: 78px;
+    border-radius: 12px;
+    border: 2px dashed rgba(241, 120, 182, 1);
+    background: rgba(241, 120, 182, 0.2);
+    cursor: pointer;
+}
+.input_file_text_main_error{
+    margin: 0;
+    padding: 40px 80px 0px 80px;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(239, 93, 168, 1);
+}
+.input_file_text_error{
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(239, 93, 168, 1);
+
+}
+
+.input_file_unvisible{
+    display: none;
+}

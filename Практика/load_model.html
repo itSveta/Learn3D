@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import "style/main.css";
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    </style>
+    <script src="script/main.js"></script>
+    <title>Learn 3D</title>
+</head>
+<body>
+    <header>
+    <div class="header__container">
+
+        <div class="logo">
+            <a href="index.html">
+                <object type="image/svg+xml" data="img/logo.svg">
+                    <img src="img/logo.svg" alt="Логотип «Учи3Д»">
+                </object>
+            </a>
+        </div>
+        <div class="link">
+            <a href="#">Войти в 3D мир</a>
+        </div>
+        <div class="profile">
+            <p>Фамилия И.О.</p>
+        </div>
+    </div>
+</header>
+    <div class="main_wrapper">
+        <div class="main_info_arrow">
+            <a class="arrow_back" href="index.html">
+                <img src="img/arrow_back.svg" alt="arrow_back">
+            </a>
+            <h1 class="arrow_back">Загрузка модели</h1>
+            <p class="text_arrow">
+                Всё просто — выбери тему, загрузи модель — готово!
+            </p>
+        </div>
+        <div class="inputs">
+            <h2 class="h2_arrow">Название</h2>
+            <input class="input_text" type="text" id="name">
+            <h2 class="h2_arrow">Выберите тему</h2>
+            <select class="input_select" id="theme">
+                <option selected>Моделирование</option>
+                <option>Анимация</option>
+                <option>Риггинг</option>
+                <option>Текстуринг</option>
+                <option>Скульптинг</option>
+            </select>
+            <h2 class="h2_arrow">Загрузи модель</h2>
+            <div class="input_file" id="file">
+                <input class="input_file_unvisible" type="file">
+                <p class="input_file_text_main">Загрузить модель</p>
+                <p class="input_file_text">Принимаются файлы в формате OBJ</p>
+            </div>
+            <button onclick="post_data()">Загрузить</button>
+        </div>
+    </div>
+</body>
+</html>
