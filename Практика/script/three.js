@@ -1,5 +1,5 @@
 
-var scene, camera, fieldOfView, aspectRatio, nearPlane, farPlane, HEIGHT, WIDTH, renderer, container, models;
+var scene, camera, fieldOfView, aspectRatio, nearPlane, farPlane, HEIGHT, WIDTH, renderer, container, models, LOADING_MANAGER, IMAGE_LOADER, OBJ_LOADER;
 
 var Colors = {
 	red:0xf25346,
@@ -111,11 +111,13 @@ function createLights() {
 	scene.add(hemisphereLight);
 	scene.add(shadowLight);
 }
-function addModels() {
-	models.forEach(element => {
-		scene.add(element);
-	});
+function initLoaders() {
+	LOADING_MANAGER = new THREE.LoadingManager();
+	IMAGE_LOADER = new THREE.ImageLoader(LOADING_MANAGER);
+	OBJ_LOADER = new THREE.OBJLoader(LOADING_MANAGER);
 }
+
+
 
 
 function init() {
@@ -126,13 +128,18 @@ function init() {
 	// add the lights
 	createLights();
 
-	//add models
-	//addModels();
 
-	makeCube();
-	makeCube();
-	makeCube();
-	makeCube();
+	//add models
+	OBJ_LOADER.load('models/Mouse.obj', (object) => {
+		object.scale.x = 0.3;
+		object.scale.y = 0.3;
+		object.scale.z = 0.3;
+		object.rotation.x = -Math.PI / 2;
+		object.position.y = -30;
+
+		OBJECT = object;
+		scene.add(OBJECT);
+	});
 
 	renderer.render(scene, camera);
 	
@@ -140,21 +147,9 @@ function init() {
 
 
 window.onload = function () {
-	console.log(Math.random()*100)
 	init();
 }
 
-
-function makeCube() {
-	var sphereGeometry = new THREE.SphereGeometry(40, 20, 20);
-	var sphereMaterial = new THREE.MeshBasicMaterial(
-		{ color: 0x7777ff, wireframe: true });
-	var sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-	sphere.position.x = Math.random()*200;
-	sphere.position.y = Math.random()*200;
-	sphere.position.z = 2;
-	scene.add(sphere);
-};
 
 
 
