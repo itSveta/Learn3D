@@ -1,5 +1,5 @@
 
-var scene, camera, fieldOfView, aspectRatio, nearPlane, farPlane, HEIGHT, WIDTH, renderer, container, models, LOADING_MANAGER, IMAGE_LOADER, OBJ_LOADER;
+var scene, camera, fieldOfView, aspectRatio, nearPlane, farPlane, HEIGHT, WIDTH, renderer, container, models;
 
 var Colors = {
 	red:0xf25346,
@@ -128,18 +128,26 @@ function init() {
 	// add the lights
 	createLights();
 
-
+	console.log("I'm here");
 	//add models
-	OBJ_LOADER.load('models/Mouse.obj', (object) => {
-		object.scale.x = 0.3;
-		object.scale.y = 0.3;
-		object.scale.z = 0.3;
-		object.rotation.x = -Math.PI / 2;
-		object.position.y = -30;
+	
+	for(i=0;i<10;i++)
+	{
+		const geometry = new THREE.BoxGeometry( 20, 20, 20 );
+		const material = new THREE.MeshNormalMaterial();
 
-		OBJECT = object;
-		scene.add(OBJECT);
-	});
+		const mesh = new THREE.Mesh(geometry, material);
+
+		mesh.scale.x = 0.5;
+		mesh.scale.y = 0.5;
+		mesh.scale.z = 0.5;
+
+		mesh.rotation.y=1;
+
+		mesh.position.x=Math.random()*100;
+		mesh.position.z=Math.random()*100;
+		scene.add(mesh);
+	}
 
 	renderer.render(scene, camera);
 	
@@ -149,7 +157,5 @@ function init() {
 window.onload = function () {
 	init();
 }
-
-
 
 
