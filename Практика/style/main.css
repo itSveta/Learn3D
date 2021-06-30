@@ -288,6 +288,16 @@ main_info_arrow{
     background: rgba(241, 120, 182, 0.2);
     cursor: pointer;
 }
+.input_file_ok{
+	height: 160px;
+    width: 600px;
+    left: 0px;
+    top: 78px;
+    border-radius: 12px;
+    border: 2px dashed rgb(120, 241, 126);
+    background: rgba(148, 241, 120, 0.2);
+    cursor: pointer;
+}
 .input_file_text_main_error{
     margin: 0;
     padding: 40px 80px 0px 80px;

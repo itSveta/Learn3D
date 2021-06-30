@@ -122,7 +122,22 @@ function loadModel() {
 		object.scale.x = 0.1;
 		object.scale.y = 0.1;
 		object.scale.z = 0.1;
-		object.position.y = 1;	
+		object.position.y = -1;
+		object.position.x = Math.random() * -100;
+		object.position.z = Math.random(-1, 1) * 50;
+
+
+		OBJECT = object;
+		scene.add(OBJECT);
+		renderer.render(scene, camera);
+	});
+	OBJ_LOADER.load('models/Olaf.obj', (object) => {
+		object.scale.x = 0.1;
+		object.scale.y = 0.1;
+		object.scale.z = 0.1;
+		object.position.y = 1;
+		object.position.x = Math.random() * -200;
+		object.position.z = Math.random(-1, 1) * 50;
 
 
 		OBJECT = object;
@@ -134,6 +149,8 @@ function loadModel() {
 
 
 function init() {
+	
+
 	initLoaders()
 
 	// настраиваем сцену, камеру и рендер
@@ -142,7 +159,6 @@ function init() {
 	// add the lights
 	createLights();
 
-	console.log("I'm here");
 	//add models
 	
 	for(i=0;i<10;i++)
