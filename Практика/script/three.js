@@ -117,11 +117,25 @@ function initLoaders() {
 	OBJ_LOADER = new THREE.OBJLoader(LOADING_MANAGER);
 }
 
+function loadModel() {
+	OBJ_LOADER.load('models/Mouse.obj', (object) => {
+		object.scale.x = 0.1;
+		object.scale.y = 0.1;
+		object.scale.z = 0.1;
+		object.position.y = 1;	
+
+
+		OBJECT = object;
+		scene.add(OBJECT);
+		renderer.render(scene, camera);
+	});
+}
 
 
 
 function init() {
-	
+	initLoaders()
+
 	// настраиваем сцену, камеру и рендер
 	createScene();
 
@@ -149,6 +163,7 @@ function init() {
 		scene.add(mesh);
 	}
 
+	loadModel();
 	renderer.render(scene, camera);
 	
 }
